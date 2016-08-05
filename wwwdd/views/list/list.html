@@ -1,0 +1,30 @@
+<ion-view>
+  <ion-header-bar class="bar bar-header bar-positive" align-title="center">
+    
+    <h1 class="title">账号列表</h1>
+    <div class="buttons">
+      <i ui-sref="new" class="icon ion-plus-round " style="font-size:26px;line-height: 33px;margin-right:10px"></i>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list list-inset">
+      <div class="item item-icon-right" ng-repeat="s in listdata" ng-click="showDetails(s)">
+        {{s.id}}
+        <div class="icon" style="font-size: 16px;">
+          <span>账户数量:</span><span style="width: 40px;text-align: center;">{{s.account.length}}</span>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="list list-inset">
+      <label class="item item-input" ng-repeat="s in listdata" style="line-height:40px">
+        {{s.id}}
+        <div style="float:right">
+          <span>账户数量:</span><span>{{s.account.length}}</span>
+        </div>
+      </label>
+      <button class="button button-block button-positive" ng-click="createPass()">
+          确定
+      </button>
+    </div> -->
+  </ion-content>
+</ion-view>

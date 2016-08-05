@@ -1,0 +1,75 @@
+/*圆圈导航*/
+div[ data-type = "navbar1"]{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+div[ data-type = "navbar1"] div[ data-type = "child"] img{
+	width: 50px;
+}
+div[ data-type = "navbar1"] div[ data-type = "main"] img{
+	width: 60px;
+}
+div[ data-type = "navbar1"] div[ data-type = "main"]{
+	position: absolute;
+	z-index: 1001;
+	bottom: -3px;
+	/*left: 44%;*/
+}
+div[ data-type = "navbar1"] div[ data-type = "child"]{
+	position: absolute;
+	bottom: -100px;
+	/*left: 44%;*/
+}
+.navbar1-child1,.navbar1-child3{
+	position: absolute;
+	bottom: 10px !important;
+/*	left: 20% !important;*/
+}
+.navbar1-child2{
+	position: absolute;
+	bottom: 50px !important;
+/*	left: 44% !important;*/
+}
+.vs-move-out-child1{
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+	-webkit-transform: translate3d(0,-110px,0);
+	transform: translate3d(0,-110px,0);	
+}
+.vs-move-out-child2{
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+	-webkit-transform: translate3d(0,-150px,0);
+	transform: translate3d(0,-150px,0);	
+}
+
+.vs-move-out-child3{
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+	-webkit-transform: translate3d(0,-110px,0);
+	transform: translate3d(0,-110px,0);	
+}
+
+.vs-move-fade-child1{
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	bottom:-100px;
+	transition: transform 0.5s, opacity 0.5s;
+	-webkit-transform: translate3d(80px,110px,0);
+	transform: translate3d(80px,110px,0);	
+}
+.vs-move-fade-child2{
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	bottom:-100px;
+	transition: transform 0.5s, opacity 0.5s;
+	-webkit-transform: translate3d(0,150px,0);
+	transform: translate3d(0,150px,0);	
+}
+.vs-move-fade-child3{
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	bottom:-100px;
+	transition: transform 0.5s, opacity 0.5s;
+	-webkit-transform: translate3d(-80px,110px,0);
+	transform: translate3d(-80px,110px,0);	
+}

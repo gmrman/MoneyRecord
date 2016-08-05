@@ -1,0 +1,21 @@
+<ion-view>
+  <ion-header-bar class="bar bar-header bar-positive" align-title="center">
+      <h1 class="title">请输入密码</h1>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list list-inset">
+      <label class="item item-input">
+        <input type="password" ng-model="fromdata.pass" placeholder="填写查看密码" />
+      </label>
+      <label class="item item-input">
+        <input type="password" ng-model="fromdata.passAgain" placeholder="再次确认密码"/>
+      </label>
+      <label class="item item-input" style="color:red" ng-show="message">
+        {{message}}
+      </label>
+      <button class="button button-block button-positive" ng-click="createPass()">
+          确定{{ss}}
+      </button>
+    </div>
+  </ion-content>
+</ion-view>

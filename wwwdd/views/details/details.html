@@ -1,0 +1,21 @@
+<ion-view>
+  <ion-header-bar class="bar bar-header bar-positive" align-title="center">
+    <div class="buttons">
+      <i ui-sref="list" class="icon ion-arrow-left-c" style="font-size:26px;line-height: 33px;margin-left:10px"></i>
+    </div>
+    <h1 class="title">{{list.id}}账号列表</h1>
+    <div class="buttons">
+      <i ng-click="newDetail(list.id)" class="icon ion-plus-round " style="font-size:26px;line-height: 33px;margin-right:10px"></i>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list list-inset">
+      <div class="item item-icon-right" ng-repeat="s in list.account">
+        {{s.name}}
+        <div class="icon" style="font-size: 16px;">
+          <span>{{s.password}}</span>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

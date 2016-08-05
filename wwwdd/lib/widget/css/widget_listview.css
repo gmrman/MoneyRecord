@@ -1,0 +1,322 @@
+li[ data-icon = "user"]{
+	background-image: url('../image/user-blue.png');
+}
+li[ data-icon = "order"]{
+	background-image: url('../image/order-blue.png');
+}
+li[ data-icon = "star"]{
+	background-image: url('../image/star-blue.png');
+}
+li[ data-icon = "goback"]{
+	background-image: url('../image/list-goback-gray.png');
+}
+li[ data-icon = "home"]{
+    background-image: url('../image/home-blue.png');
+    background-size: 17px !important;
+    text-indent: 49px !important;
+}
+li[ data-icon = "icon01"]{
+	background-image: url('../image/list-01-blue.png');
+	background-size: 15px;
+}li[ data-icon = "icon02"]{
+	background-image: url('../image/list-02-blue.png');
+	background-size: 15px;
+}
+li[ data-icon = "icon03"]{
+	background-image: url('../images/list-03-gray.png');
+}
+li[ data-icon = "icon03-blue"]{
+	background-image: url('../images/list-03-blue.png');
+}
+li[ data-icon = "icon04"]{
+	background-image: url('../images/list-04-gray.png');
+}
+li[ data-icon = "icon05"]{
+	background-image: url('../images/list-05-gray.png');
+}
+li[ data-icon = "icon06"]{
+	background-image: url('../images/list-06-gray.png');
+}
+li[ data-icon = "icon07"]{
+	background-image: url('../images/list-07-gray.png');
+}
+li[ data-icon = "icon08"]{
+	background-image: url('../images/list-08-gray.png');
+}
+li[ data-icon = "icon09"]{
+	background-image: url('../images/list-09-gray.png');
+}
+li[ data-icon = "icon10"]{
+	background-image: url('../images/list-10-gray.png');
+}
+li[ data-icon = "icon10-blue"]{
+	background-image: url('../images/list-10-blue.png');
+}
+/*listview控件样式*/
+ul[data-role = "listview"]{
+	margin: 0px;
+	padding: 30px 0;
+	-moz-user-select: none;
+	-o-user-select:none;
+	-khtml-user-select:none;
+	-webkit-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+ul[data-role = "listview"] li{
+	text-indent: 10%;
+	height: 50px;
+	line-height: 50px;
+	color: #565656;
+	background-color: #fff;
+	position: relative;
+	min-width: 161px;
+	-moz-user-select: none;
+	-o-user-select:none;
+	-khtml-user-select:none;
+	-webkit-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+ul[data-role = "listview"] li circle{
+	top: -15px;
+	right:0;
+	background-color:red;
+	line-height: 20px;
+	width: 20px;
+	height: 20px;
+}
+ul[data-role = "listview"] li label,ul[data-role = "listview"] li span{
+	display: inline-block;
+    vertical-align: top;
+    margin: 0 2% 0 0;
+    text-indent: 0;
+ }
+ ul[data-role = "listview"] li input, ul[data-role = "listview"] li select{
+	 width: 50%;
+ }
+ ul[data-role = "listview"] li input[data-type='border']{
+	border: 1px solid #aaa;
+	min-height: 40px;
+	width: 50% !important;
+	padding: 0px;
+	border-radius: 10px;
+    text-indent: 10px;
+    margin: 0;
+    background: rgba(0, 0, 0, 0) none;
+    outline: 0!important;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance: none;
+	font-size: 1em;
+    font-family: sans-serif /*{global-font-family}*/;
+}
+ul[data-role = "listview"] li:hover{
+	background-color: #f9f9f9;
+}
+
+ul[data-role = "listview"] li{
+	background-repeat: no-repeat;
+    background-size: 15px;
+    text-indent: 50px;
+    background-position: 25px center;
+}
+
+
+
+/*底部带边框的ul列表*/
+
+ul[ data-role="listview"][ data-type="border_bottom"] li{
+	border-bottom: 1px solid #ddd;
+	height: 60px;
+	line-height: 60px;
+}
+ul[ data-role="listview"][ data-type="border_bottom"] li:last-child{
+	border-bottom: 0px solid #ddd;
+}
+
+ul[ data-role="listview"][ data-type="border_bottom"] li input{
+	border: 0;
+	width: 50%;
+}
+ul[ data-role="listview"][ data-type="border_bottom"] li input[data-type='border']{
+	border: 1px solid #aaa;
+	min-height: 40px;
+	width: 50% !important;
+	padding: 0px;
+	border-radius: 10px;
+    text-indent: 10px;
+    margin: 0;
+    background: rgba(0, 0, 0, 0) none;
+    outline: 0!important;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance: none;
+	font-size: 1em;
+    font-family: sans-serif /*{global-font-family}*/;
+}
+ul[ data-role="listview"][ data-type="border_bottom"] li span{
+	width: 20%;
+	min-width: 80px;
+	margin: 0;
+}
+/*右侧带箭头的ul列表*/
+ul[ data-role="listview"] li[ data-type="next"]{
+	background-image: url('../image/icon-nextlist.png ');
+    background-size: 15px;
+    background-position: 90% center;
+}
+ul[ data-role="listview"] li[ data-type="plus"]{
+	background-image: url('../image/icon-pluslist.png ');
+    background-size: 15px;
+    background-position: 90% center;
+}
+ul[data-role = "listview"] li input[type="text"],ul[data-role = "listview"] li input[type="password"],ul[data-role = "listview"] li input[type="number"],ul[data-role = "listview"] li input[type="text"],ul[data-role = "listview"] li input[type="date"]{
+	border: 0;
+	width: 50%;
+ }
+
+ /*pattern1 列表样式*/
+
+ul[data-role="listview"][data-type="pattern1"]{
+	padding: 0 !important;
+}
+ul[data-role="listview"][data-type="pattern1"] li{
+	text-indent: 0px !important;
+	margin: 4px 0;
+	position: relative;
+}
+ul[data-role="listview"][data-type="pattern1"] li div:nth-child(1){
+	position: absolute;
+	background-color: #fff;
+	height: 170px;
+	width: 100%;
+	z-index: 2;
+	overflow-y: scroll;
+}
+ul[data-role="listview"][data-type="pattern1"] li span[data-type="delete"]{
+    color: white;
+    background-color: #315FA5;
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    top: 0;
+    right: 0;
+    height: 170px;
+    line-height: 170px;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+}
+
+ul[data-role="listview"][data-type="pattern1"]>li{
+	height: 170px ;
+	font-size: 11px;
+	text-indent: 0 !important;
+	line-height: 30px !important;
+}
+ul[data-role="listview"][data-type="pattern1"]>li div label{
+	margin-right: 0 !important;
+	text-indent: 2%;
+}
+ul[data-role="listview"][data-type="pattern1"]>li>div>label:first-child {
+	width: 100%;
+	font-size: 14px;
+	color: #000;
+    background-color: #B0C4DE;
+}
+ul[data-role="listview"][data-type="pattern1"]>li div label label{
+    width: initial;
+    float: initial;
+    text-indent: 0;
+}
+ul[data-role="listview"][data-type="pattern1"] label[data-type="right"]{
+	width: 50%;
+    float: right;
+
+}
+ul[data-role="listview"][data-type="pattern1"]>li div>label{
+	width: 100%;
+}
+ul[data-role="listview"][data-type="pattern1"]>li input{
+	border: 1px solid #315FA5 !important;
+	width: 45% !important;
+    display:inline;
+    height: 30px !important;
+    min-height: 30px;
+    margin-left:1%;
+    border-radius: 10px;
+}
+ul[data-role="listview"][data-type="pattern1"]>li select{
+	border: 1px solid #315FA5;
+	width: 45% !important;
+    display:inline;
+    height: 32px;
+    margin-left:1%;
+    border-radius: 10px;
+}
+/*pattren2样式*/
+ul[data-role = "listview"][data-type="pattern2"]{
+    padding: 1%;
+    margin: 0;
+    width: 98%;
+}
+ul[data-role = "listview"][data-type="pattern2"]>li{
+	text-indent: 2% !important;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+}
+ul[data-role="listview"][data-type="pattern2"]>li input{
+	border: 1px solid #315FA5 !important;
+	width: 45% !important;
+	display: inline;
+	height: 30px !important;
+	min-height: 15px;
+	margin: 0 0 0 1%;
+	border-radius: 10px;
+	padding: 0;
+}
+ul[data-role = "listview"][data-type="pattern2"]>li[data-type="title1"]{
+	background-color: #5D87BE;
+}
+ul[data-role = "listview"][data-type="pattern2"]>li[data-type="title2"]{
+	background-color: #C5DFDD;
+	text-indent: 50px !important;
+}
+ul[data-role = "listview"][data-type="pattern2"]>li span,ul[data-role = "listview"][data-type="pattern2"] li label{
+	margin: 0;
+	padding: 0;
+	display: inline;
+	color: #000;
+}
+ul[data-role = "listview"][data-type="pattern2"]>li span:nth-child(1){
+	width: 30%
+}
+ul[data-role = "listview"][data-type="pattern2"]>li span:nth-child(2){
+	width: 68%
+}
+ul[data-role="listview"][data-type="pattern1"] label[data-type="right"]{
+	width: 50%;
+    float: right;
+}
+/*pattren3样式*/
+ul[data-role = "listview"][data-type="pattern3"]{
+	margin: 0 ;
+	padding: 0;
+}
+ul[data-role = "listview"][data-type="pattern3"] li[data-type="title"]{
+	background-color: #F4F4F4;
+	height: 30px;
+	line-height: 30px;
+	color: #000;
+	font-weight: bolder;
+	font-size: 16px;
+	text-indent: 5px;
+}
+ul[data-role = "listview"][data-type="pattern3"] li[data-type="content"]{
+	text-indent: 5px;
+	line-height: 40px;
+	height: 80px;
+	border-bottom: 1px solid #F4F4F4;
+}

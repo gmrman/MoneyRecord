@@ -1,0 +1,179 @@
+/*
+请使用 data-role="navbar" 属性来定义导航栏。
+	icon-typepos="left" 将把图标定位到按钮的左侧。
+	icon-typepos="center" 将把图标定位到按钮的中间。
+	icon-typepos="right" 将把图标定位到按钮的右侧。
+*/
+/*.png icon*/
+li[icon-type="01"]{
+    background-image: url('../images/fun01.png');
+}
+li[icon-type="02"]{
+    background-image: url('../images/fun02.png');
+}
+li[icon-type="03"]{
+    background-image: url('../images/fun03.png');
+}
+li[icon-type="04"]{
+    background-image: url('../images/fun04.png');
+}
+li[icon-type="05"]{
+    background-image: url('../images/fun05.png');
+}
+li[icon-type="06"]{
+    background-image: url('../images/fun06.png');
+}
+li[icon-type="07"]{
+    background-image: url('../images/fun07.png');
+}
+li[icon-type="08"]{
+    background-image: url('../images/fun08.png');
+}
+li[icon-type="09"]{
+    background-image: url('../images/fun09.png')
+}
+li[icon-type = "home"]{
+	background-image: url('../images/home-gray.png');
+}
+li[icon-type = "print"]{
+	background-image: url('../images/print-gray.png');
+}
+li[icon-type = "setting"]{
+	background-image: url('../images/setting-gray.png');
+}
+li[icon-type = "exit"]{
+	background-image: url('../images/exit-gray.png');
+}
+li[icon-type = "scan"]{
+	background-image: url('../images/icon-scanbar.png');
+}
+li[icon-type = "doc01"]{
+	background-image: url('../images/doc01-gray.png');
+}
+li[icon-type = "user"]{
+	background-image: url('../images/user-gray.png');
+}
+li[icon-type = "goback"]{
+	background-image: url('../images/goback-blue.png');
+}
+li[icon-type = "upcloud"]{
+	background-image: url('../images/upcloud-blue.png');
+}
+li[icon-type = "update"]{
+	background-image: url('../images/update-blue.png');
+}
+/*.png icon : hover*/
+
+li[ icon-type = "home"]:hover,li[ icon-type = "home"][data-type="current"]{
+	background-image: url('../images/home-blue.png');
+	color: #008EFF;
+	/*-webkit-animation: icon-bounce 1s linear infinite both;*/
+}
+li[ icon-type = "print"]:hover,li[ icon-type = "print"][data-type="current"]{
+	background-image: url('../images/print-blue.png');
+	color: #008EFF;
+}
+li[ icon-type = "setting"]:hover,li[ icon-type = "setting"][data-type="current"]{
+	background-image: url('../images/setting-blue.png');
+	color: #008EFF;
+}
+li[ icon-type = "exit"]:hover,li[ icon-type = "exit"][data-type="current"]{
+	background-image: url('../images/exit-blue.png');
+	color: #008EFF;
+}
+li[ icon-type = "doc01"]:hover,li[ icon-type = "doc01"][data-type="current"]{
+	background-image: url('../images/doc01-blue.png');
+}
+li[ icon-type = "user"]:hover,li[ icon-type = "user"][data-type="current"]{
+	background-image: url('../images/user-blue.png');
+}
+/*--------------------content中的功能导航--------------------*/
+ul[data-role = "navbar"] li{
+	width: 33.33%;
+    background-repeat: no-repeat;
+}
+ul[data-role="navbar"]{
+    margin: 0px;
+    width: 100%;
+}
+ul[data-role="navbar"] li{
+	float: left;
+    display: inline-block !important;
+    background-color: #fff;
+    width: 33.33%;
+    height: 7rem;
+    background-size: auto 26%;
+    background-position: center 30%;
+    line-height: 9rem;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+}
+
+/*--------------------footer中的底部导航栏--------------------*/
+
+div[data-role="footer"] ul[data-role = "navbar"] {
+	margin: 0;
+    padding: 0;
+    font-size: 12.5px;
+}
+div[data-role="footer"] ul[data-role = "navbar"] li{
+	height: 20px;
+	line-height: 20px;
+    min-height: 1px;
+    width: 33.33%;
+    min-width: .75em;
+	color: #2f3e46;
+	float: left;
+	margin: 0 !important;
+    padding-top: 30px;
+    border: 0;
+    background-size: 20px;
+    background-position: center 5px;
+}
+div[data-role="footer"] ul[data-role = "navbar"] li:hover{
+	background-color: #f9f9f9;
+}
+div[data-role="footer"] ul[data-role = "navbar"] li span{
+	position: relative;
+    z-index: 1;
+    width: 100%;
+	display: block;
+    text-align: center;
+    font-size: 11px;
+}
+div[data-role="footer"] ul[data-role = "navbar"] li[ data-type = "big-circle"]{/*突出标记导航项*/
+    background-size: 0;
+}
+udiv[data-role="footer"] l[data-role = "navbar"] li[ data-type = "big-circle"]:hover{/*突出标记导航项*/
+    background-color: #fff;
+}
+div[data-role="footer"] ul[data-role = "navbar"] li[ data-type = "big-circle"] span{/*突出标记导航项*/
+	height: 60px;
+    width: 60px;
+	max-width: 60px;
+    background-color: #fff;
+    top: -50px;
+    left: 10%;
+    position: relative;
+    border-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top: 1px solid #ADADAD;
+    -moz-box-shadow: 10px 10px 5px #888888;
+    box-shadow: 0px 0px 1px #ADADAD;
+    background-size: 35px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/*icon-typepos="left" 将把图标定位到按钮的左侧。*/
+div[data-role="footer"] ul[data-role = "navbar"] li[icon-typepos="left"]{
+    background-size: 15px;
+    text-indent: 50px !important;
+    background-position: 25px center;
+    padding: 0 !important;
+    height: 40px;
+    line-height: 40px;
+}
+
+

@@ -1,0 +1,10 @@
+.ui-icon-loading {
+	background-color: #D6D6D6;
+	display: block;
+	margin: 0;
+	width: 2.75em;
+	height: 2.75em;
+	padding: .0625em;
+	-webkit-border-radius: 2.25em;
+	border-radius: 2.25em;
+}

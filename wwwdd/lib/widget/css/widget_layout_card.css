@@ -1,0 +1,95 @@
+div[ data-role = "card"]{
+    margin: 3px 0;
+}
+div[ data-role = "bar-bottom"]{
+    position: relative;
+    width: 100%;
+    height: 5px;
+    top: -2px;
+    background-image: url('../image/bar01.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+div[ data-role = "card"] ul li{
+	overflow: visible;
+    text-align: left;
+    border-width: 0;
+    border-top-width: 1px;
+}
+div[data-role="card-title"]{
+	position: relative;
+	background-color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: 1px solid #B9B9B9;
+    height: 40px;
+    line-height: 40px;
+    color: #565656;
+}
+div[data-role="card-title"] label{
+	display: inline-block;
+}
+div[data-role="card-title"] label[data-type="title-left"]{
+	text-indent: 5px;
+	position: absolute;
+	left: 0;
+
+}
+div[data-role="card-content"]{
+    background-color: #fff;
+	font-weight: 100;
+	min-height: 50px;
+	color: #676464;
+	font-size: 18px;
+	padding: 5px 0;
+}
+div[data-role="card-content"] label{
+	padding: 0.4em 0;
+	display: inline-block;
+}
+/*编辑card*/
+div[data-role="card-title"] label[data-type="edit-btn"]{
+	position: absolute;
+	font-size: 16px !important;
+	right: 0;
+	top:4px;
+	padding: 0 0.4em;
+	margin: 0 0.1em;
+	color: #676464;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+}
+div[data-role="content1"]{
+	width: 95%;
+	min-height: 80px;
+}
+div[data-role="content2"]{
+	width: 95%;
+	min-height: 80px;
+	display: none;
+}
+/*左滑删除*/
+
+div[data-type="scroll"]{
+	position: relative;
+	overflow: visible;
+}
+
+div[data-type="scroll"] span{
+	display: inline-block;
+    overflow: hidden;
+}
+div[data-type="scroll"] div[data-type='hidden-div']{
+    color: white;
+    background-image: linear-gradient(#FF8C00,#FF4500);    position: absolute;
+    width: 80px;
+    top: 0;
+    right: 0;
+    height: 100%;
+    line-height: 140px;
+}
+div[data-type='hidden-div']:after{
+	content: '删除';
+}
